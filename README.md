@@ -52,5 +52,6 @@ This application supports the following basic interactions between entities:
 
 Below is the database schema used by the application:
 
-![DB Schema](https://github.com/user-attachments/assets/7217aebb-7c3e-4609-8691-0f1e30b62cb3)
+![DB Schema](https://github.com/user-attachments/assets/413de115-61e0-4640-8f2d-78803784e36c)
+
 
