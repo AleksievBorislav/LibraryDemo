@@ -1,9 +1,56 @@
-A fairly simple demo app designed to support basic library functionality with its main goal being the demonstration of the following features:
-- Spring
-- Java
-- Flyweight
-- Controller, Service, Repository pattern
-- Swagger
-- Global exception handler
-- JDBC
-![DB schema](https://github.com/user-attachments/assets/5fae0a74-bf97-470d-aaed-e96299aef21a)
+# Library Management Demo App
+
+This is a simple demonstration application designed to provide basic library management functionality. The primary focus of the project is to showcase the implementation of various technical features and patterns.
+
+---
+
+## Features
+
+### **Non-Functional Features**
+- **Spring Framework**
+- **Java**
+- **Global Exception Handling**
+- **JDBC**: For database interaction, avoiding the additional abstraction layer of Hibernate.
+- **Flyweight Pattern**: Used for migration.
+- **Redis Cache**
+- **Jobs**
+- **CSV Generation**
+- **Controller-Service-Repository Pattern**
+- **Singleton Pattern**
+- **Integration Testing**: Utilizes TestContainers for realistic database and Redis testing environments.
+- **Docker**: Used exclusively for testing via TestContainers.
+- **Swagger**
+- **CI/CD Pipeline**: Automated pipeline that runs all tests on every push.
+
+---
+
+### **Functional Features**
+This application supports the following basic interactions between entities:
+
+- **Books**:
+  - Add a book.
+  - Delete a book.
+  - Retrieve a book by its unique book number.
+  - Get a list of books by title.
+  - Check which books has a reader ever borrowed.
+  - Retrieve the most popular books of the last week.
+  
+- **Readers**:
+  - Add a reader.
+  - Delete a reader.
+  - Retrieve a reader by ID or EGN.
+  - Get a list of unreturned books by EGN.
+
+- **Borrowing**:
+  - Borrow a book.
+  - Return a book.
+  - Automatically or manually generate overdue reports.
+
+---
+
+## Database Schema
+
+Below is the database schema used by the application:
+
+![DB Schema](https://github.com/user-attachments/assets/7217aebb-7c3e-4609-8691-0f1e30b62cb3)
+
