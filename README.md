@@ -11,7 +11,7 @@ This is a simple demonstration application designed to provide basic library man
 - **Java**
 - **Global Exception Handling**
 - **JDBC**: For database interaction, avoiding the additional abstraction layer of Hibernate.
-- **Flyweight Pattern**: Used for migration.
+- **Flyweight**: Used for migration.
 - **Redis Cache**
 - **Jobs**
 - **CSV Generation**
