@@ -1,6 +1,6 @@
 package com.library.config;
 
-import com.library.servicetest.model.OverdueBorrowing;
+import com.library.repo.model.OverdueBorrowing;
 import com.opencsv.CSVWriter;
 import org.springframework.stereotype.Component;
 

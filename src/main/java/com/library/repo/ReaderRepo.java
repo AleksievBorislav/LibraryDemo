@@ -1,11 +1,11 @@
-package com.library.servicetest;
+package com.library.repo;
 
 import com.library.config.exceptions.ReaderAlreadyExistsException;
 import com.library.config.exceptions.ReaderNotFoundException;
-import com.library.servicetest.model.Reader;
-import com.library.servicetest.model.ReaderRequest;
-import com.library.servicetest.model.SQL.ReaderSQL;
-import com.library.servicetest.model.mappers.ReaderMapper;
+import com.library.repo.model.Reader;
+import com.library.repo.model.ReaderRequest;
+import com.library.repo.model.SQL.ReaderSQL;
+import com.library.repo.model.mappers.ReaderMapper;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.dao.EmptyResultDataAccessException;

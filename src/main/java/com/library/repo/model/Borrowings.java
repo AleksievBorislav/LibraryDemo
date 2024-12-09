@@ -1,4 +1,4 @@
-package com.library.servicetest.model;
+package com.library.repo.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

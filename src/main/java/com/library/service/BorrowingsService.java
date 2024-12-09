@@ -1,8 +1,8 @@
 package com.library.service;
 
 import com.library.config.Logger;
-import com.library.servicetest.BorrowingsRepo;
-import com.library.servicetest.model.OverdueBorrowing;
+import com.library.repo.BorrowingsRepo;
+import com.library.repo.model.OverdueBorrowing;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

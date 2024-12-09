@@ -1,12 +1,12 @@
 package com.library.config;
 
 import com.library.config.exceptions.ReaderNotFoundException;
-import com.library.servicetest.model.Borrowings;
-import com.library.servicetest.model.OverdueBorrowing;
-import com.library.servicetest.model.OverdueReport;
-import com.library.servicetest.model.mappers.BorrowingsMapper;
-import com.library.servicetest.model.mappers.OverdueBorrowingMapper;
-import com.library.servicetest.model.mappers.ReportMapper;
+import com.library.repo.model.Borrowings;
+import com.library.repo.model.OverdueBorrowing;
+import com.library.repo.model.OverdueReport;
+import com.library.repo.model.mappers.BorrowingsMapper;
+import com.library.repo.model.mappers.OverdueBorrowingMapper;
+import com.library.repo.model.mappers.ReportMapper;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Profile;
 import org.springframework.dao.EmptyResultDataAccessException;

@@ -1,4 +1,4 @@
-package com.library.servicetest.model.SQL;
+package com.library.repo.model.SQL;
 
 public class BorrowingsSQL {
 

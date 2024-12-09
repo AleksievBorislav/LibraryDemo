@@ -2,10 +2,10 @@ package com.library.servicetest;
 
 import com.library.BaseTest;
 import com.library.config.TestService;
-import com.library.servicetest.model.BookRequest;
-import com.library.servicetest.model.OverdueBorrowing;
-import com.library.servicetest.model.OverdueReport;
-import com.library.servicetest.model.ReaderRequest;
+import com.library.repo.model.BookRequest;
+import com.library.repo.model.OverdueBorrowing;
+import com.library.repo.model.OverdueReport;
+import com.library.repo.model.ReaderRequest;
 import com.library.service.BookService;
 import com.library.service.BorrowingsService;
 import com.library.service.ReaderService;

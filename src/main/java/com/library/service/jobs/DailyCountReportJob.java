@@ -2,7 +2,7 @@ package com.library.service.jobs;
 
 import com.library.config.CsvGenerator;
 import com.library.config.Logger;
-import com.library.servicetest.model.OverdueBorrowing;
+import com.library.repo.model.OverdueBorrowing;
 import com.library.service.BorrowingsService;
 import com.library.service.ReportService;
 import org.springframework.scheduling.annotation.Scheduled;

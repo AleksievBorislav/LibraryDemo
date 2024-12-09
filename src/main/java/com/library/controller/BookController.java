@@ -1,8 +1,8 @@
 package com.library.controller;
 
-import com.library.servicetest.model.Book;
-import com.library.servicetest.model.BookRequest;
-import com.library.servicetest.model.PopularBookDTO;
+import com.library.repo.model.Book;
+import com.library.repo.model.BookRequest;
+import com.library.repo.model.PopularBookDTO;
 import com.library.service.BookService;
 import org.springframework.web.bind.annotation.*;
 

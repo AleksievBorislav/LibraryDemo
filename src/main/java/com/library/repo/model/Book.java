@@ -1,16 +1,22 @@
-package com.library.servicetest.model;
+package com.library.repo.model;
 
 import java.math.BigDecimal;
 
-public class BookRequest {
+public class Book {
+    long bookId;
     long uniqueBookNumber;
     String title;
     int pageCount;
-    BigDecimal price;
+    int readersCount;
     String author;
+    BigDecimal price;
 
     public BigDecimal getPrice() {
         return price;
+    }
+
+    public int getReadersCount() {
+        return readersCount;
     }
 
     public int getPageCount() {
@@ -21,20 +27,26 @@ public class BookRequest {
         return title;
     }
 
-    public long getUniqueBookNumber() {
-        return uniqueBookNumber;
+    public long getBookId() {
+        return bookId;
     }
 
     public String getAuthor() {
         return author;
     }
 
+    public long getUniqueBookNumber() {
+        return uniqueBookNumber;
+    }
+
     public static final class BookBuilder {
+        private long bookId;
         private long uniqueBookNumber;
         private String title;
         private int pageCount;
-        private BigDecimal price;
+        private int readersCount;
         private String author;
+        private BigDecimal price;
 
         public BookBuilder() {
         }
@@ -43,8 +55,8 @@ public class BookRequest {
             return new BookBuilder();
         }
 
-        public BookBuilder withuniqueBookNumber(long uniqueBookNumber) {
-            this.uniqueBookNumber = uniqueBookNumber;
+        public BookBuilder withBookId(long bookId) {
+            this.bookId = bookId;
             return this;
         }
 
@@ -58,6 +70,11 @@ public class BookRequest {
             return this;
         }
 
+        public BookBuilder withReadersCount(int readersCount) {
+            this.readersCount = readersCount;
+            return this;
+        }
+
         public BookBuilder withAuthor(String author) {
             this.author = author;
             return this;
@@ -68,9 +85,16 @@ public class BookRequest {
             return this;
         }
 
-        public BookRequest build() {
-            BookRequest book = new BookRequest();
+        public BookBuilder withUniqueBookNumber(long uniqueBookNumber) {
+            this.uniqueBookNumber = uniqueBookNumber;
+            return this;
+        }
+
+        public Book build() {
+            Book book = new Book();
+            book.bookId = this.bookId;
             book.uniqueBookNumber = this.uniqueBookNumber;
+            book.readersCount = this.readersCount;
             book.pageCount = this.pageCount;
             book.price = this.price;
             book.author = this.author;

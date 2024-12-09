@@ -2,7 +2,7 @@ package com.library.servicetest;
 
 import com.library.BaseTest;
 import com.library.config.TestService;
-import com.library.servicetest.model.*;
+import com.library.repo.model.*;
 import com.library.service.BookService;
 import com.library.service.BorrowingsService;
 import com.library.service.ReaderService;

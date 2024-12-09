@@ -1,6 +1,6 @@
-package com.library.servicetest.model.mappers;
+package com.library.repo.model.mappers;
 
-import com.library.servicetest.model.Book;
+import com.library.repo.model.Book;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

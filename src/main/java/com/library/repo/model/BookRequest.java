@@ -1,33 +1,39 @@
-package com.library.servicetest.model;
+package com.library.repo.model;
 
-import java.io.Serializable;
+import java.math.BigDecimal;
 
-public class PopularBookDTO implements Serializable {
+public class BookRequest {
     long uniqueBookNumber;
-    int borrowingsCount;
     String title;
+    int pageCount;
+    BigDecimal price;
     String author;
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public int getPageCount() {
+        return pageCount;
+    }
 
     public String getTitle() {
         return title;
-    }
-
-    public int getBorrowingsCount() {
-        return borrowingsCount;
-    }
-
-    public String getAuthor() {
-        return author;
     }
 
     public long getUniqueBookNumber() {
         return uniqueBookNumber;
     }
 
+    public String getAuthor() {
+        return author;
+    }
+
     public static final class BookBuilder {
-        private int borrowingsCount;
         private long uniqueBookNumber;
         private String title;
+        private int pageCount;
+        private BigDecimal price;
         private String author;
 
         public BookBuilder() {
@@ -37,8 +43,8 @@ public class PopularBookDTO implements Serializable {
             return new BookBuilder();
         }
 
-        public BookBuilder withBookId(int bookId) {
-            this.borrowingsCount = bookId;
+        public BookBuilder withuniqueBookNumber(long uniqueBookNumber) {
+            this.uniqueBookNumber = uniqueBookNumber;
             return this;
         }
 
@@ -47,20 +53,26 @@ public class PopularBookDTO implements Serializable {
             return this;
         }
 
+        public BookBuilder withPageCount(int pageCount) {
+            this.pageCount = pageCount;
+            return this;
+        }
+
         public BookBuilder withAuthor(String author) {
             this.author = author;
             return this;
         }
 
-        public BookBuilder withUniqueBookNumber(long uniqueBookNumber) {
-            this.uniqueBookNumber = uniqueBookNumber;
+        public BookBuilder withPrice(BigDecimal price) {
+            this.price = price;
             return this;
         }
 
-        public PopularBookDTO build() {
-            PopularBookDTO book = new PopularBookDTO();
-            book.borrowingsCount = this.borrowingsCount;
+        public BookRequest build() {
+            BookRequest book = new BookRequest();
             book.uniqueBookNumber = this.uniqueBookNumber;
+            book.pageCount = this.pageCount;
+            book.price = this.price;
             book.author = this.author;
             book.title = this.title;
             return book;

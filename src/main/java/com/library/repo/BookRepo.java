@@ -1,15 +1,15 @@
-package com.library.servicetest;
+package com.library.repo;
 
 import com.library.config.Logger;
 import com.library.config.exceptions.BookAlreadyExistsException;
 import com.library.config.exceptions.BookNotFoundException;
 import com.library.config.exceptions.ReaderNotFoundException;
-import com.library.servicetest.model.Book;
-import com.library.servicetest.model.BookRequest;
-import com.library.servicetest.model.PopularBookDTO;
-import com.library.servicetest.model.SQL.BookSQL;
-import com.library.servicetest.model.mappers.BookMapper;
-import com.library.servicetest.model.mappers.PopularBookMapper;
+import com.library.repo.model.Book;
+import com.library.repo.model.BookRequest;
+import com.library.repo.model.PopularBookDTO;
+import com.library.repo.model.SQL.BookSQL;
+import com.library.repo.model.mappers.BookMapper;
+import com.library.repo.model.mappers.PopularBookMapper;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.dao.EmptyResultDataAccessException;

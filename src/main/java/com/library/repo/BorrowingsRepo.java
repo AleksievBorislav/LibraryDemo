@@ -1,11 +1,11 @@
-package com.library.servicetest;
+package com.library.repo;
 
 
 import com.library.config.Logger;
 import com.library.config.exceptions.FailedToBorrowException;
-import com.library.servicetest.model.OverdueBorrowing;
-import com.library.servicetest.model.SQL.BorrowingsSQL;
-import com.library.servicetest.model.mappers.OverdueBorrowingMapper;
+import com.library.repo.model.OverdueBorrowing;
+import com.library.repo.model.SQL.BorrowingsSQL;
+import com.library.repo.model.mappers.OverdueBorrowingMapper;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;

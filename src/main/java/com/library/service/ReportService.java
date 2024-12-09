@@ -1,7 +1,7 @@
 package com.library.service;
 
-import com.library.servicetest.ReportRepo;
-import com.library.servicetest.model.OverdueBorrowing;
+import com.library.repo.ReportRepo;
+import com.library.repo.model.OverdueBorrowing;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

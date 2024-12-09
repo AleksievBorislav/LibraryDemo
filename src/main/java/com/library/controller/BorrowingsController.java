@@ -1,6 +1,6 @@
 package com.library.controller;
 
-import com.library.servicetest.model.OverdueBorrowing;
+import com.library.repo.model.OverdueBorrowing;
 import com.library.service.BorrowingsService;
 import org.springframework.web.bind.annotation.*;
 

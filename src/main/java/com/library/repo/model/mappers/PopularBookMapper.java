@@ -1,6 +1,6 @@
-package com.library.servicetest.model.mappers;
+package com.library.repo.model.mappers;
 
-import com.library.servicetest.model.PopularBookDTO;
+import com.library.repo.model.PopularBookDTO;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

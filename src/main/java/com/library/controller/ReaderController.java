@@ -1,7 +1,7 @@
 package com.library.controller;
 
-import com.library.servicetest.model.Reader;
-import com.library.servicetest.model.ReaderRequest;
+import com.library.repo.model.Reader;
+import com.library.repo.model.ReaderRequest;
 import com.library.service.ReaderService;
 import org.springframework.web.bind.annotation.*;
 

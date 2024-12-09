@@ -1,11 +1,8 @@
-package com.library.servicetest;
+package com.library.repo;
 
 import com.library.config.Logger;
-import com.library.servicetest.model.OverdueBorrowing;
-import com.library.servicetest.model.OverdueReport;
-import com.library.servicetest.model.SQL.ReportSQL;
-import com.library.servicetest.model.mappers.OverdueBorrowingMapper;
-import com.library.servicetest.model.mappers.ReportMapper;
+import com.library.repo.model.OverdueBorrowing;
+import com.library.repo.model.SQL.ReportSQL;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -14,7 +11,6 @@ import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

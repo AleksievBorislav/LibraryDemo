@@ -1,8 +1,8 @@
 package com.library.service;
 
-import com.library.servicetest.ReaderRepo;
-import com.library.servicetest.model.Reader;
-import com.library.servicetest.model.ReaderRequest;
+import com.library.repo.ReaderRepo;
+import com.library.repo.model.Reader;
+import com.library.repo.model.ReaderRequest;
 import org.springframework.stereotype.Service;
 
 @Service

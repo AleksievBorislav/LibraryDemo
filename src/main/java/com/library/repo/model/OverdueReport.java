@@ -1,4 +1,4 @@
-package com.library.servicetest.model;
+package com.library.repo.model;
 
 import java.time.LocalDateTime;
 import java.util.List;
